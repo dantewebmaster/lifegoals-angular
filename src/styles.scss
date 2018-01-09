@@ -27,6 +27,9 @@ ul {
 		margin-right: 20px;
 		a.nav-link {
 			font-size: 1em;
+			&.active {
+				font-weight: 700;
+			}
 		}
 	}
 }
@@ -42,9 +45,14 @@ img {
 	margin: 1em 0;
 	max-width: 100%;
 }
-nav {
+.brand {
+	display: block;
 	strong {
 		font-size: 35px;
+	}
+	.version {
+		font-size: 14px;
+		font-weight: 300;
 	}
 }
 
@@ -52,6 +60,10 @@ nav {
 	display: grid;
 	grid-template-columns: 50% auto;
 	max-width: 768px;
+	@media (max-width: 680px) {
+		display: block;
+		width: 100%;
+	}
 }
 .col {
 	padding: 0.4em 1.3em;
@@ -80,4 +92,12 @@ nav {
 }
 .text-center {
 	text-align: center;
+}
+
+.btn {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	padding: 0.5em 1em;
 }

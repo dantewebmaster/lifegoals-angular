@@ -1,15 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<h1 class="brand text-center">
+	<a routerLink=""><small class="text-dark"><small>life</small></small><strong>GOALS!</strong></a>
+	<span class="version"><small>v</small>1.0.0</span>
+</h1>
 <nav class="container">
-	<div class="col">
-		<ul>
-			<li><a routerLink=""><span class="text-dark">life</span><strong>GOALS!</strong></a></li>
-			<li><a class="nav-link" routerLink="">Home</a></li>
-			<li><a class="nav-link" routerLink="about">About</a></li>
-		</ul>
-	</div>
-	<div class="col text-right">
-		<p><small>v</small>1.0.0</p>
-	</div>
+	<ul>
+		<li><a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+		<li><a class="nav-link" routerLink="about" routerLinkActive="active">About</a></li>
+	</ul>
 </nav>
 
 <router-outlet></router-outlet>

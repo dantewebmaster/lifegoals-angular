@@ -3,7 +3,7 @@
 		<p><strong>Add a bucket list item</strong></p>
 	</div>
 	<div class="col">
-		<p>Your bucket list ({{ itemCount }})</p>
+		<p>Your bucket list ({{ itemCount }}) <button *ngIf="goals.length > 1" class="btn" (click)="sortList()"><strong>Sort</strong></button></p>
 	</div>
 </div>
 <div class="container color-light body" [@goals]="goals.length">
@@ -17,9 +17,10 @@
 			<input type="submit" class="btn" [value]="btnText" (click)="addItem()" [disabled]="goal.errors?.required || goal.errors?.minlength">
 		</form>
 	</div>
-	<div class="col">
+	<div class="col" *ngIf="goals?.length">
 		<p class="life-container color-dark" *ngFor="let goal of goals; let i = index" (dblclick)="removeItem(i)" >
 			{{ goal }}
 		</p>
 	</div>
 </div>
+<p class="text-center text-dark instructions"><small><strong>Enter</strong> to add (minlength 5) - <strong>Double click</strong> to delete</small></p>
