@@ -1,0 +1,33 @@
+<div class="container color-dark header">
+	<div class="col">
+		<p>
+			<strong>About</strong>
+		</p>
+	</div>
+	<div class="col">
+		<p class="text-right">
+			<button class="btn-home" (click)="backToHome()">&lArr; Back to home</button>
+		</p>
+	</div>
+</div>
+<div class="container color-light body">
+	<div class="col">
+		<p class="text-dark">
+			<strong>life GOALS!</strong> is an app developed with <strong>Angular 5</strong>, by following the amazing Udemy course
+			<a class="link-bold" href="https://www.udemy.com/angular-5/learn/v4/overview" target="_blank">Learn Angular 5 from Scratch</a> created by the Angular master
+			<a class="link-bold" href="https://www.udemy.com/user/garysimon2/" target="_blank">Gary Simon</a>
+		</p>
+	</div>
+	<div class="col">
+		<h1 class="text-dark text-big text-center">With some tweaks :)</h1>
+	</div>
+
+	<div class="col">
+		<h1 class="text-dark text-big text-center">Your actual life goals</h1>
+	</div>
+	<div class="col" *ngIf="goals">
+		<ul class="goals-list">
+			<li *ngFor="let goal of goals">{{ goal }}</li>
+		</ul>
+	</div>
+</div>

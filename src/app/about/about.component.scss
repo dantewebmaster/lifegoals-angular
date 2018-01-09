@@ -1,0 +1,30 @@
+.btn-home {
+	background: transparent;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+}
+
+.text-big {
+	font-size: 3em;
+	line-height: 1;
+}
+.link-bold {
+	color: #e91010;
+	font-weight: 700;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.goals-list {
+	color: #111;
+	li {
+		background: #d7d7d7;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		display: inline-block;
+		margin: 5px 5px 0 0;
+		padding: 0.2em 0.8em;
+	}
+}

@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	background: linear-gradient(-90deg, rgb(145, 170, 250), rgb(186, 201, 252));
+	color: #fff;
+	display: grid;
+	align-items: center;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	justify-content: center;
+	line-height: 1.8;
+	padding: 3em;
+}
+ul {
+	list-style-type: none;
+	margin: 0 0 2em 0;
+	padding: 0;
+	li {
+		display: inline;
+		margin-right: 20px;
+		a.nav-link {
+			font-size: 1em;
+		}
+	}
+}
+a {
+	color: #fff;
+	font-weight: 300;
+	text-decoration: none;
+}
+strong {
+	font-weight: 700;
+}
+img {
+	margin: 1em 0;
+	max-width: 100%;
+}
+nav {
+	strong {
+		font-size: 35px;
+	}
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 50% auto;
+	max-width: 768px;
+}
+.col {
+	padding: 0.4em 1.3em;
+}
+.header {
+	border-radius: 5px 5px 0 0;
+}
+.body {
+	border-radius: 0 0 5px 5px;
+}
+
+.color-dark {
+	background: rgb(49, 129, 248);
+}
+.color-light {
+	background: #fff;
+}
+.f-right {
+	float: right;
+}
+.text-dark {
+	color: #111;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}

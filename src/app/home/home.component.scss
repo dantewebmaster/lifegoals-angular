@@ -1,0 +1,30 @@
+input {
+	border: 0;
+	font-size: 16px;
+	padding: 1.2em;
+	width: 100%;	
+	&.txt {
+		border: 1px solid #ddd;
+	}
+	&.btn {
+		background: rgb(0, 185, 46);
+		border-radius: 30px;
+		color: #fff;
+		cursor: pointer;
+		display: block;
+		margin: 2em 0 1em;
+		text-align: center;
+		&:disabled {
+			cursor: default;
+			opacity: 0.7;
+		}
+	}
+}
+
+.life-container {
+	border-radius: 3px;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 0.3em 0.6em;
+	word-wrap: break-word;
+}
